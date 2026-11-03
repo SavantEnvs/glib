@@ -1,0 +1,7 @@
+project: savantenvs/glib
+target: fuzz_get_locale_variants
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_get_locale_variants
+    libfuzzer: true
