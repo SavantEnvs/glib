@@ -1,0 +1,7 @@
+project: savantenvs/glib
+target: fuzz_uuid_string_is_valid
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_uuid_string_is_valid
+    libfuzzer: true

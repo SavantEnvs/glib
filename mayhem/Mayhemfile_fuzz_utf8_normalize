@@ -1,0 +1,7 @@
+project: savantenvs/glib
+target: fuzz_utf8_normalize
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_utf8_normalize
+    libfuzzer: true

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=Application
+Name=Foo
+Actions=frob;tweak;twiddle;broken;
+Exec=true
+
+[Desktop Action frob]
+Name=Frobnicate
+Exec=sh -c '[ -d "$G_TEST_TMPDIR" ] && touch "$G_TEST_TMPDIR/frob"'
+
+[Desktop Action tweak]
+Name=Tweak
+Exec=sh -c '[ -d "$G_TEST_TMPDIR" ] && touch "$G_TEST_TMPDIR/tweak"'
+
+[Desktop Action twiddle]
+Name=Twiddle
+Exec=sh -c '[ -d "$G_TEST_TMPDIR" ] && touch "$G_TEST_TMPDIR/twiddle"'

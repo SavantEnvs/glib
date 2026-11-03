@@ -1,0 +1,7 @@
+project: savantenvs/glib
+target: fuzz_variant_binary
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_variant_binary
+    libfuzzer: true

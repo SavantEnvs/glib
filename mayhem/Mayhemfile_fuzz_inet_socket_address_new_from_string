@@ -1,0 +1,7 @@
+project: savantenvs/glib
+target: fuzz_inet_socket_address_new_from_string
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_inet_socket_address_new_from_string
+    libfuzzer: true

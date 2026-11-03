@@ -1,0 +1,7 @@
+project: savantenvs/glib
+target: fuzz_dbus_node_info_new_for_xml
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_dbus_node_info_new_for_xml
+    libfuzzer: true
