@@ -1,0 +1,8 @@
+project: savantenvs/glib
+target: fuzz_variant_text
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_variant_text
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_variant_text/fuzz_variant_text.dict

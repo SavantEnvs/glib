@@ -1,0 +1,7 @@
+project: savantenvs/glib
+target: fuzz_filename_from_uri
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_filename_from_uri
+    libfuzzer: true

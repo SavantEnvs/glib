@@ -1,0 +1,8 @@
+project: savantenvs/glib
+target: fuzz_bookmark
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_bookmark/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_bookmark
+    libfuzzer: true
